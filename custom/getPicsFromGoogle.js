@@ -17,7 +17,7 @@ module.exports=function (Pictures,req,res) {
         }
     })
         .then(function (data) {
-            console.log('scraped images .....')
+            console.log('scraped images ......')
             each(data, function(pics, next) {
                 pics.keyword=req.query.imgName
                 Pictures.create(pics).then(function (resp) {
