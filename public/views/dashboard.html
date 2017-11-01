@@ -1,0 +1,18 @@
+<div class="jumbotron container">
+    <h2>Hello, I am Sachin Vashist!&nbsp;&nbsp;<small>MEAN stack Developer</small></h2>
+    <h4>In this project, Your can scrap first 15 images of your wish from google.</h4>
+    <br/>
+    <p>{{output.loading?"Seaching for `"+output.item+"` ...":"Enter search item in header Search Box!"}}</p>
+
+</div>
+
+<div class="container">
+    <div ng-repeat="pics in output.images" class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src={{pics.thumb_url}}>
+            <div class="caption">
+                <p class="text-center"><a href={{pics.url}} target="_blank" class="btn btn-danger">Open Image</a></p>
+            </div>
+        </div>
+    </div>
+</div>

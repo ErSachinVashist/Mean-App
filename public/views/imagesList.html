@@ -1,0 +1,26 @@
+<div class="container">
+<div class="jumbotron">
+    Your Searched Items goes hear
+</div>
+    <ul ng-repeat="(keyword,pics) in dbImages">
+        <h3>Keyword : {{keyword}}</h3>
+        <li style="list-style-type: none">
+            <div class="list-group">
+                <a target="_blank" href={{pic.url}} class="list-group-item" ng-repeat="pic in pics">
+                    <img width="30" src={{pic.thumb_url}}>&nbsp;&nbsp;{{pic.thumb_url}}
+                </a>
+            </div>
+        </li>
+    </ul>
+    <!--<div class="panel panel-primary" ng-repeat="(keyword,pics) in dbImages">-->
+        <!--<div class="panel-heading">{{keyword}}</div>-->
+        <!--<div class="panel-body">-->
+            <!--<div class="list-group">-->
+                <!--<a target="_blank" href={{pic.url}} class="list-group-item" ng-repeat="pic in pics">-->
+                    <!--<img width="30" src={{pic.thumb_url}}>&nbsp;&nbsp;{{pic.thumb_url}}-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+</div>
